@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet" >
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+           
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Ask!</button>
+            </form>
+
+            <div class="d-flex ap-2 align-items-center">
+              <div>
+                  <img src="hello.jpg" class="img-thumbnail"  alt="...">
+              </div>
+              <div class="content">
+                  <div class="content__name">Dr. Pepper</div>
+                  <div class="content__links">
+                      <a href="#">Settings</a>
+                      <a href="#">Log out</a>
+                  </div>
+              </div>
+  
+            </div>
+
+        </div>
+      </nav>
+
+      <main class="container mt-2">
+        <div class="row">
+          <section class="col-8 vh-100" >
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <h1>New Question</h1>
+            </div>
+            
+            <articles class="d-flex gap-3 flex-column">
+                <form>
+                    <div class="mb-3 d-flex justify-content-between">
+                      <div class="col-1">
+                        <label for="exampleFloatingInputTitle1" class="form-label">Title</label>
+                      </div>
+                      
+                      <div class="col-11">
+                        <!--<div class="input has-validation">
+                          <div class="input is-invalid">
+                            <input type="title" class="form-control is-invalid" id="exampleInputTitleInvalid1" placeholder="How to build a moon park?" required>
+                          </div>
+                          <div class="invalid-feedback">
+                            Please choose a title.
+                          </div>
+                        </div>-->
+                        <input type="title" class="form-control" id="exampleInputTitle1" aria-describedby="emailHelp" placeholder="How to build a moon park?">
+                      </div>
+                    </div>
+
+                    
+
+                    
+
+                    <div class="mb-3 d-flex justify-content-between">
+                        <div class="col-1">
+                            <label for="exampleFormControlTextarea1" class="form-label">Text</label>
+                        </div>
+                        <div class="col-11">
+                          <div class="input has-validation">
+                            <div class="input is-invalid">
+                              <textarea class="form-control is-invalid" id="exampleFormControlTextareaInvalid1" rows="10" placeholder="Really, how ? &#10Have no idea about it" required></textarea>
+                            </div>
+                            <div class="invalid-feedback">
+                              Your text must contain at least 5 symbols.
+                            </div>
+                          </div>
+                          <!--<textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Really, how ? &#10Have no idea about it"></textarea>-->
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3 d-flex justify-content-between ">
+                        <div class="col-1">
+                            <label class="form-label" for="exampleInputTags1">Tags</label>
+                        </div>
+                        <div class="col-11 d-grid gap-3">
+                            <!--<div class="input has-validation">
+                            <div class="input is-invalid">
+                              <input type="tags" class="form-control is-ivalid" id="exampleInputTagsInvalid1" placeholder="moon, park, puzzle" required>
+                            </div>
+                            <div class="invalid-feedback">
+                              You can choose no more than 3 tags for one question. Tags must be separated by comma.
+                            </div>
+                            </div>-->
+                            <input type="tags" class="form-control" id="exampleInputTags1" placeholder="moon, park, puzzle">
+                            <button type="submit" class="btn btn-outline-dark col-1">Ask!</button>
+                        </div>
+                    </div>
+                    
+                  </form>
+              
+                  
+              
+              
+                  
+                  
+             
+              
+            </articles>
+            
+
+          </section>
+
+          <aside class="col-3 ">
+            <section class="mb-3">
+              <h3>Popular tags</h3>
+              <div>
+                <span class="badge text-bg-primary">Primary</span>
+                <span class="badge text-bg-secondary">Secondary</span>
+                <span class="badge text-bg-success">Success</span>
+                <span class="badge text-bg-danger">Danger</span>
+                <span class="badge text-bg-warning">Warning</span>
+                <span class="badge text-bg-info">Info</span>
+                <span class="badge text-bg-light">Light</span>
+                <span class="badge text-bg-dark">Dark</span>
+              </div>
+            </section>
+            <section>
+              <h3>Best members</h3>
+              <div>
+                <a class="d-block" href="#">Member</a>
+                <a class="d-block" href="#">Member</a>
+                <a class="d-block" href="#">Member</a>
+                <a class="d-block" href="#">Member</a>
+                <a class="d-block" href="#">Member</a>
+              </div>
+            </section>
+
+          </aside>
+        </div>
+      </main>
+    <script src="js/bootstrap.bundle.js" ></script>
+  </body>
+
+</html>
